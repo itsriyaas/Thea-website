@@ -35,7 +35,7 @@
     />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:custom-card" content="summary_large_image" />
     <meta property="twitter:url" content="https://uideck.com/play/" />
     <meta
       property="twitter:title"
@@ -146,12 +146,6 @@
                 </li>
               </ul>
             </div>
-            <div
-              class="ud-hero-brands-wrapper wow fadeInUp"
-              data-wow-delay=".3s"
-            >
-              <img src="assets/images/hero/brand.svg" alt="brand" />
-            </div>
             <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
               <img src="/assets/images/THEA LANDING PAGE 1.jpg" alt="hero-image" />
               <img
@@ -172,7 +166,7 @@
     <!-- ====== Hero End ====== -->
 
     <!-- ====== Features Start ====== -->
-    <section id="features" class="ud-features">
+    <section id="features" class="ud-features py-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -182,62 +176,82 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
-              <div class="ud-feature-icon">
-                <i class="lni lni-website"></i>
-              </div>
-              <div class="ud-feature-content">
-                <h3 class="ud-feature-title">Web Development</h3>
-                <p class="ud-feature-desc" style="text-align: justify;">
-                  Your website is the face of your business. So, it's important that your website has the latest features, is highly responsive, fast, and secure. Our web developers help you fulfill your dream of an ideal website.
+        <div class="row g-4">
+          <!-- Web Development -->
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="custom-card h-100 shadow border-0">
+              <div class="custom-card-body text-center">
+                <div class="mb-3 text-primary fs-1">
+                  <i class="lni lni-website"></i>
+                </div>
+                <h5 class="custom-card-title">Web Development</h5>
+                <p class="custom-card-text text-muted" style="text-align: justify;">
+                  Your website is the face of your business. Our developers create modern, responsive, and secure websites tailored to your goals.
                 </p>
+              </div>
+              <div class="custom-card-footer bg-white border-0 text-center">
+                <a href="/webdev.html" class="text-decoration-none text-primary fw-semibold">Learn More</a>
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".15s">
-              <div class="ud-feature-icon">
-                <i class="lni lni-move"></i>
-              </div>
-              <div class="ud-feature-content">
-                <h3 class="ud-feature-title">Digital Transformation</h3>
-                <p class="ud-feature-desc" style="text-align: justify;">
-                  We help businesses overcome the complexities of the digital landscape and transform their operations. With our expert strategies, we help you scale your business and completely transform your startup.
+    
+          <!-- App Development -->
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="custom-card h-100 shadow border-0">
+              <div class="custom-card-body text-center">
+                <div class="mb-3 text-success fs-1">
+                  <i class="lni lni-android"></i>
+                </div>
+                <h5 class="custom-card-title">App Development</h5>
+                <p class="custom-card-text text-muted" style="text-align: justify;">
+                  We build top-notch mobile apps with smooth UX and high-security standards to ensure your users stay engaged and secure.
                 </p>
+              </div>
+              <div class="custom-card-footer bg-white border-0 text-center">
+                <a href="/appdev.html" class="text-decoration-none text-primary fw-semibold">Learn More</a>
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".2s">
-              <div class="ud-feature-icon">
-                <i class="lni lni-layout"></i>
-              </div>
-              <div class="ud-feature-content">
-                <h3 class="ud-feature-title">Branding</h3>
-                <p class="ud-feature-desc" style="text-align: justify;">
-                  Build a powerful brand identity with our creative team. Our branding service includes creative and innovative logo designs, brand positioning, business cards, envelopes, etc.
+    
+          <!-- Branding -->
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="custom-card h-100 shadow border-0">
+              <div class="custom-card-body text-center">
+                <div class="mb-3 text-warning fs-1">
+                  <i class="lni lni-layout"></i>
+                </div>
+                <h5 class="custom-card-title">Branding</h5>
+                <p class="custom-card-text text-muted" style="text-align: justify;">
+                  From logos to full brand identity, we help create impactful visual designs that leave a lasting impression.
                 </p>
+              </div>
+              <div class="custom-card-footer bg-white border-0 text-center">
+                <a href="/branding.html" class="text-decoration-none text-primary fw-semibold">Learn More</a>
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-3 col-sm-6">
-            <div class="ud-single-feature wow fadeInUp" data-wow-delay=".25s">
-              <div class="ud-feature-icon">
-                <i class="lni lni-bar-chart"></i>
-              </div>
-              <div class="ud-feature-content">
-                <h3 class="ud-feature-title">Digital Marketing</h3>
-                <p class="ud-feature-desc" style="text-align: justify;">
-                  Reach your audience and grow your business with our Digital Marketing strategies. We use data-driven methods to help you connect with potential customers.
+    
+          <!-- Digital Marketing -->
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="custom-card h-100 shadow border-0">
+              <div class="custom-card-body text-center">
+                <div class="mb-3 text-danger fs-1">
+                  <i class="lni lni-bar-chart"></i>
+                </div>
+                <h5 class="custom-card-title">Digital Marketing</h5>
+                <p class="custom-card-text text-muted" style="text-align: justify;">
+                  Drive results with data-driven digital strategies that increase visibility and attract customers to your business.
                 </p>
+              </div>
+              <div class="custom-card-footer bg-white border-0 text-center">
+                <a href="/digitalmarketing.html" class="text-decoration-none text-primary fw-semibold">Learn More</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    
     <!-- ====== Features End ====== -->
 
     <!-- ====== About Start ====== -->
@@ -440,48 +454,29 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-5">
-            <div
-              class="ud-contact-form-wrapper wow fadeInUp"
-              data-wow-delay=".2s"
-            >
+            <div class="ud-contact-form-wrapper wow fadeInUp" data-wow-delay=".2s">
               <h3 class="ud-contact-form-title">Send us a Message</h3>
-              <form class="ud-contact-form">
+              <form class="ud-contact-form" id="whatsappForm">
                 <div class="ud-form-group">
                   <label for="fullName">Full Name*</label>
-                  <input
-                    type="text"
-                    name="fullName"
-                    placeholder="Adam Gelius"
-                  />
+                  <input type="text" name="fullName" id="fullName" placeholder="Adam Gelius" required />
                 </div>
                 <div class="ud-form-group">
                   <label for="email">Email*</label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="example@yourmail.com"
-                  />
+                  <input type="email" name="email" id="email" placeholder="example@yourmail.com" required />
                 </div>
                 <div class="ud-form-group">
                   <label for="phone">Phone*</label>
-                  <input
-                    type="text"
-                    name="phone"
-                    placeholder="+885 1254 5211 552"
-                  />
+                  <input type="number" name="phone" id="phone" placeholder="+91 12345 67890" required  min="1000000000"
+                  max="9999999999"
+                  oninput="if(this.value.length > 10) this.value = this.value.slice(0, 10);" />
                 </div>
                 <div class="ud-form-group">
                   <label for="message">Message*</label>
-                  <textarea
-                    name="message"
-                    rows="1"
-                    placeholder="type your message here"
-                  ></textarea>
+                  <textarea name="message" id="message" rows="1" placeholder="Type your message here" required></textarea>
                 </div>
                 <div class="ud-form-group mb-0">
-                  <button type="submit" class="ud-main-btn">
-                    Send Message
-                  </button>
+                  <button type="submit" class="ud-main-btn">Send Message</button>
                 </div>
               </form>
             </div>
@@ -489,6 +484,7 @@
         </div>
       </div>
     </section>
+    
     <!-- ====== Contact End ====== -->
 
     <!-- ====== Footer Start ====== -->
@@ -662,6 +658,22 @@
       }
 
       window.document.addEventListener("scroll", onScroll);
+
+      //test
+      document.getElementById("whatsappForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+    
+        const fullName = document.getElementById("fullName").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+    
+        const text = `New Inquiry:\n\nName: ${fullName}\nEmail: ${email}\nPhone: +91 ${phone}\nMessage: ${message}`;
+        const encodedText = encodeURIComponent(text);
+        const whatsappURL = `https://api.whatsapp.com/send?phone=919846875775&text=${encodedText}`;
+    
+        window.open(whatsappURL, "_blank");
+      });
     </script>
   </body>
 </html>

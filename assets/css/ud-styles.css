@@ -1,9 +1,9 @@
 /*===========================
   COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Special+Gothic&display=swap');
 :root {
-  --font: "Inter", sans-serif;
+  --font: "DM Sans", sans-serif;
   --body-color: #637381;
   --heading-color: #212b36;
   --primary-color: #3056d3;
@@ -2634,3 +2634,61 @@ p {
   }
 }
 /*# sourceMappingURL=ud-styles.css.map */
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* Card */
+.custom-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+}
+
+.icon-box {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  text-align: justify;
+}
+
+.learn-more {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.learn-more:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
