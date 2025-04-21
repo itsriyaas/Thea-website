@@ -1,9 +1,9 @@
 /*===========================
   COMMON css 
 ===========================*/
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Special+Gothic&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 :root {
-  --font: "DM Sans", sans-serif;
+  --font: 'SF Pro Display', sans-serif;
   --body-color: #637381;
   --heading-color: #212b36;
   --primary-color: #3056d3;
