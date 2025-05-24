@@ -20,7 +20,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://uideck.com/play/" />
+    <meta property="og:url" content="https://theaitsolutions.net/" />
     <meta
       property="og:title"
       content="Thea IT Solutions LLP"
@@ -29,14 +29,10 @@
       property="og:description"
       content="Thea IT Solutions"
     />
-    <meta
-      property="og:image"
-      content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg"
-    />
 
     <!-- Twitter -->
     <meta property="twitter:custom-card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://uideck.com/play/" />
+    <meta property="twitter:url" content="https://theaitsolutions.net/" />
     <meta
       property="twitter:title"
       content="Thea IT Solutions LLP"
@@ -45,15 +41,11 @@
       property="twitter:description"
       content="Thea IT Solutions"
     />
-    <meta
-      property="twitter:image"
-      content="https://uideck.com/wp-content/uploads/2021/09/play-meta-bs.jpg"
-    />
 
     <!--====== Favicon Icon ======-->
     <link
       rel="shortcut icon"
-      href="assets/images/microsoft.svg"
+      href="/assets/images/favicon.svg"
       type="image/svg"
     />
 
@@ -62,9 +54,181 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/lineicons.css" />
     <link rel="stylesheet" href="assets/css/ud-styles.css" />
-    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-                
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">    
   </head>
+  <style>
+    /* From Uiverse.io by MuhammadHasann */ 
+.card {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(240, 15%, 9%);
+  --paragraph: hsl(0, 0%, 83%);
+  --line: hsl(240, 9%, 17%);
+  --primary: hsl(266, 92%, 58%);
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+text-align: center;
+  padding: 1rem;
+  width: 19rem;
+  background-color: hsla(240, 15%, 9%, 1);
+  background-image: radial-gradient(
+      at 88% 40%,
+      hsla(240, 15%, 9%, 1) 0px,
+      transparent 85%
+    ),
+    radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1), transparent 85%),
+    radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    radial-gradient(at 0% 64%, #20649b 0px, transparent 85%),
+    radial-gradient(at 41% 94%, #20649b 0px, transparent 85%),
+    radial-gradient(at 100% 99%, #3b77a8 0px, transparent 85%);
+
+  border-radius: 1rem;
+  box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+}
+
+.card .card__border {
+  overflow: hidden;
+  pointer-events: none;
+
+  position: absolute;
+  z-index: -10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background-image: linear-gradient(
+    0deg,
+    hsl(0, 0%, 100%) -50%,
+    hsl(0, 0%, 40%) 100%
+  );
+
+  border-radius: 1rem;
+}
+
+.card .card__border::before {
+  content: "";
+  pointer-events: none;
+
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%), rotate(0deg);
+  transform-origin: left;
+
+  width: 200%;
+  height: 10rem;
+  background-image: linear-gradient(
+    0deg,
+    hsla(0, 0%, 100%, 0) 0%,
+    hsl(277, 95%, 60%) 40%,
+    hsl(277, 95%, 60%) 60%,
+    hsla(0, 0%, 40%, 0) 100%
+  );
+
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card .card_title__container .card_title {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+.card .card_title__container .card_paragraph {
+  margin-top: 0.25rem;
+  width: 65%;
+
+  font-size: 0.5rem;
+  color: var(--paragraph);
+}
+
+.card .line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--line);
+
+  border: none;
+}
+.card_paragraph{
+  text-align: center;
+  font-size: 16px;
+}
+
+.card .button {
+  cursor: pointer;
+
+  padding: 0.5rem;
+  width: 100%;
+  background-image: linear-gradient(
+    0deg,
+    #20649b,
+    #20649b
+  );
+
+  font-size: 0.75rem;
+  color: var(--white);
+
+  border: 0;
+  border-radius: 9999px;
+  box-shadow: inset 0 -2px 25px -4px var(--white);
+}
+.card_title{
+  font-weight: 
+  bold;
+}
+.shine-overlay {
+  position: relative;
+  overflow: hidden;
+  
+  &:hover .shine {
+    display: block;
+  }
+}
+
+.shine {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(50%,rgba(255,255,255,.8)),to(rgba(255,255,255,0)));
+  background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.8) 50%,rgba(255,255,255,0) 100%);
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0;
+  transform: skew(30deg);
+  animation: shine 0.75s linear 1;
+}
+
+@keyframes shine {
+  0% {
+    left: -50%;
+    opacity: 0;
+  }
+  50% {
+    left: 25%;
+    opacity: .5;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+  </style>
   <body>
     <!-- ====== Header Start ====== -->
     <header class="ud-header">
@@ -72,8 +236,8 @@
         <div class="row">
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="index.html">
-                <span class="fw-bold text-white startup-logo">Thea IT Solutions</span>
+              <a href="index.html">
+                <img src="/assets/images/logo/logo_white.png" alt="logo" class="logo" id="navbar-logo">
               </a>
               <button class="navbar-toggler">
                 <span class="toggler-icon"> </span>
@@ -86,16 +250,16 @@
                   <li class="nav-item">
                     <a class="ud-menu-scroll" href="#home">Home</a>
                   </li>
-
+                   <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#features">Services</a>
+                  </li>
                   <li class="nav-item">
                     <a class="ud-menu-scroll" href="#about">About</a>
                   </li>
                   <li class="nav-item">
                     <a class="ud-menu-scroll" href="#faq">Faq</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="ud-menu-scroll" href="#features">Services</a>
-                  </li>
+                  
                   <li class="nav-item">
                     <a class="ud-menu-scroll" href="#contact">Contact</a>
                   </li>
@@ -104,7 +268,7 @@
 
               <div class="navbar-btn d-none d-sm-inline-block">
                 <a class="ud-main-btn ud-white-btn" href="/contact.html">
-                  Connect
+                  Get in Touch<i class="lni lni-arrow-right-circle ms-2"></i>
                 </a>
               </div>
             </nav>
@@ -115,57 +279,79 @@
     <!-- ====== Header End ====== -->
 
     <!-- ====== Hero Start ====== -->
-    <section class="ud-hero" id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
-              <h1 class="ud-hero-title">
-                Delivering Quality Technology.
-              </h1>
-              <p class="ud-hero-desc">
-                walk into the future with high end technologies and eyecatching creativity with the expertise from Thea IT Solutions.
-              </p>
-              <ul class="ud-hero-buttons">
-                <li>
-                  <a
-                    href="https://api.whatsapp.com/send?phone=919846875775"
-                    rel="nofollow noopener"
-                    target="_blank"
-                    class="ud-main-btn ud-white-btn"
-                  >
-                   Connect With us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#contact"
-                    rel="nofollow noopener"
-                    class="ud-main-btn ud-link-btn"
-                  >
-                    Book a call <i class="lni lni-arrow-right"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
-              <img src="/assets/images/THEA LANDING PAGE 1.jpg" alt="hero-image" />
-              <img
-                src="assets/images/hero/dotted-shape.svg"
-                alt="shape"
-                class="shape shape-1"
-              />
-              <img
-                src="assets/images/hero/dotted-shape.svg"
-                alt="shape"
-                class="shape shape-2"
-              />
-            </div>
-          </div>
+   <section class="ud-hero" id="home">
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="/assets/images/mtopen_3c156d2d90d5458e88c3fc9006ba4386_MTc0NzEyMzIwMA==_4f6eb68b-8fa3-4e38-55c6-52b5914f9f98.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+          
+          <h1 class="ud-hero-title" style="margin-top: 150px;">
+            Delivering Quality Technology.
+          </h1>
+          <p class="ud-hero-desc">
+            Walk into the future with high end technologies and eye-catching creativity with the expertise from Thea IT Solutions.
+          </p>
+          <ul class="ud-hero-buttons">
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=919048299118"
+                rel="nofollow noopener"
+                target="_blank"
+                class="ud-main-btn ud-white-btn"
+              >
+                Connect With Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                rel="nofollow noopener"
+                class="ud-main-btn ud-link-btn"
+              >
+                Book a call <i class="lni lni-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
     <!-- ====== Hero End ====== -->
+<!-- Carousel Section -->
+<div class="ud-hero-carousel swiper mt-5">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="/assets/images/posters/940 x 440 pixel_a.jpg"
+           data-src-mobile="assets/images/posters/all.jpg"
+           alt="Slide 1" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/assets/images/posters/940 x 440 pixel_b.jpg"
+           data-src-mobile="assets/images/posters/ai.jpg"
+           alt="Slide 2" />
+    </div>
+    <div class="swiper-slide">
+      <img src="/assets/images/posters/940 x 440 pixel_aa.jpg"
+           data-src-mobile="assets/images/posters/web.jpg"
+           alt="Slide 3" />
+    </div>
+     <div class="swiper-slide">
+      <img src="/assets/images/posters/940 x 440 pixel_bb.jpg"
+           data-src-mobile="assets/images/posters/digital.jpg"
+           alt="Slide 3" />
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
 
     <!-- ====== Features Start ====== -->
     <section id="features" class="ud-features py-5">
@@ -181,74 +367,67 @@
         <div class="row g-4">
           <!-- Web Development -->
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="custom-card h-100 shadow border-0">
-              <div class="custom-card-body text-center">
-                <div class="mb-3 text-primary fs-1">
+            <div class="card shine-overlay">
+  <div class="card__border"></div>
+  <div class="card_title__container">
+    <div class="mb-3 text-primary fs-1">
                   <i class="lni lni-website"></i>
                 </div>
-                <h5 class="custom-card-title">Web Development</h5>
-                <p class="custom-card-text text-muted">
-                  Your website is the face of your business. Our developers create modern, responsive, and secure websites tailored to your goals.
-                </p>
-              </div>
-              <div class="custom-card-footer bg-white border-0 text-center">
-                <a href="/webdev.html" class="text-decoration-none text-primary fw-semibold">Learn More</a>
-              </div>
-            </div>
+    <span class="card_title">Web Development</span>
+    <div class="d-flex justify-content-center align-items-center"><p class="card_paragraph fs-6">Your website is the face of your business. Our developers create modern, responsive, and secure websites tailored to your goals.</p></div>
+    <div class="shine"></div>
+  </div>
+  <a href="/webdev.html"><button class="button">Learn More</button></a>
+</div>
           </div>
     
           <!-- App Development -->
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="custom-card h-100 shadow border-0">
-              <div class="custom-card-body text-center">
-                <div class="mb-3 text-success fs-1">
-                  <i class="lni lni-android"></i>
+           <div class="card shine-overlay">
+  <div class="card__border"></div>
+  <div class="card_title__container">
+    <div class="mb-3 text-primary fs-1">
+                 <i class="lni lni-android" style="color: red;"></i>
                 </div>
-                <h5 class="custom-card-title">App Development</h5>
-                <p class="custom-card-text text-muted">
-                  We build top-notch mobile apps with smooth UX and high-security standards to ensure your users stay engaged and secure.
-                </p>
-              </div>
-              <div class="custom-card-footer bg-white border-0 text-center">
-                <a href="/appdev.html" class="text-decoration-none text-primary fw-semibold">Learn More</a>
-              </div>
-            </div>
+    <span class="card_title">App Development</span>
+    <div class="d-flex justify-content-center align-items-center"><p class="card_paragraph fs-6">We build top-notch mobile apps with smooth UX and high-security standards to ensure your users stay engaged and secure.</p></div>
+     <div class="shine"></div>
+  </div>
+  <a href="/appdev.html"><button class="button">Learn More</button></a>
+</div>
           </div>
     
           <!-- Branding -->
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="custom-card h-100 shadow border-0">
-              <div class="custom-card-body text-center">
-                <div class="mb-3 text-warning fs-1">
-                  <i class="lni lni-layout"></i>
+            <div class="card shine-overlay">
+  <div class="card__border"></div>
+  <div class="card_title__container">
+    <div class="mb-3 text-primary fs-1">
+                <i class="lni lni-layout" style="color: orange;"></i>
                 </div>
-                <h5 class="custom-card-title">Branding</h5>
-                <p class="custom-card-text text-muted">
-                  From logos to full brand identity, we help create impactful visual designs that leave a lasting impression.
-                </p>
-              </div>
-              <div class="custom-card-footer bg-white border-0 text-center">
-                <a href="/branding.html" class="text-decoration-none text-primary fw-semibold">Learn More</a>
-              </div>
-            </div>
+    <span class="card_title">Branding</span>
+    <div class="d-flex justify-content-center align-items-center"><p class="card_paragraph fs-6">From logos to full brand identity, we help create impactful visual designs that leave a lasting impression.</p></div>
+     <div class="shine"></div>
+  </div>
+ <a href="/branding.html"><button class="button mt-4">Learn More</button></a>
+</div>
           </div>
     
           <!-- Digital Marketing -->
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="custom-card h-100 shadow border-0">
-              <div class="custom-card-body text-center">
-                <div class="mb-3 text-danger fs-1">
-                  <i class="lni lni-bar-chart"></i>
+            <div class="card shine-overlay">
+  <div class="card__border"></div>
+  <div class="card_title__container">
+    <div class="mb-3 text-primary fs-1">
+                <i class="lni lni-bar-chart" style="color: green;"></i>
                 </div>
-                <h5 class="custom-card-title">Digital Marketing</h5>
-                <p class="custom-card-text text-muted">
-                  Drive results with data-driven digital strategies that increase visibility and attract customers to your business.
-                </p>
-              </div>
-              <div class="custom-card-footer bg-white border-0 text-center">
-                <a href="/digitalmarketing.html" class="text-decoration-none text-primary fw-semibold">Learn More</a>
-              </div>
-            </div>
+    <span class="card_title">Digital Marketing</span>
+    <div class="d-flex justify-content-center align-items-center"><p class="card_paragraph fs-6"> Drive results with data-driven digital strategies that increase visibility and attract customers to your business.</p></div>
+     <div class="shine"></div>
+  </div>
+  <a href="/digitalmarketing.html"><button class="button mt-4">Learn More</button></a>
+</div>
+
           </div>
         </div>
       </div>
@@ -263,15 +442,15 @@
           <div class="ud-about-content-wrapper">
             <div class="ud-about-content">
               <span class="tag">About Us</span>
-              <h2>What we do ?</h2>
-              <p class="text-muted">
+              <h2>Why Choose Us?</h2>
+              <p>
                 We are a dynamic digital solutions company specializing in comprehensive services that drive business success. Our expertise spans web and mobile app development, strategic digital marketing, innovative branding, and cutting-edge technology solutions designed to transform and elevate businesses in the digital landscape.
               </p>
-              <a href="#contact" class="ud-main-btn">Contact Us</a>
+              <a href="/about.html" class="ud-main-btn">Know More <i class="lni lni-arrow-right-circle ms-2"></i></a>
             </div>
           </div>
           <div class="ud-about-image">
-            <img src="assets/images/about/about-image.svg" alt="about-image" />
+            <img src="/assets/images/Business Analysis.gif" alt="about-image" />
           </div>
         </div>
       </div>
@@ -454,7 +633,7 @@
                   </div>
                   <div class="ud-info-meta">
                     <h5>How Can We Help?</h5>
-                    <p>theaitsolutionsllp@gmail.com</p>
+                    <a href="mailto:support@theaitsolutions.net"><p>support@theaitsolutions.net</p></a>
                   </div>
                 </div>
               </div>
@@ -511,7 +690,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="ud-widget">
                 <a href="index.html" class="ud-footer-logo">
-                  <span class="fw-bold text-white startup-logo">Thea IT Solutions</span>
+                  <img src="/assets/images/logo/logo_white.png" alt="logo" style="margin-left: -20px;">
                 </a>
                 <p class="ud-widget-desc">
                   We create digital experiences for brands and companies by
@@ -519,22 +698,22 @@
                 </p>
                 <ul class="ud-widget-socials">
                   <li>
-                    <a href="https://twitter.com/Thea IT Solutions">
+                    <a href="https://www.facebook.com/theaitsolutions">
                       <i class="lni lni-facebook-filled"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/Thea IT Solutions">
+                    <a href="https://api.whatsapp.com/send?phone=919048299118" target="_blank">
                       <i class="lni lni-whatsapp"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/Thea IT Solutions">
+                    <a href="https://instagram.com/theaitsolutions" target="_blank">
                       <i class="lni lni-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/Thea IT Solutions">
+                    <a href="https://www.linkedin.com/company/thea-it-solutions/" target="_blank">
                       <i class="lni lni-linkedin-original"></i>
                     </a>
                   </li>
@@ -556,7 +735,7 @@
                     <a href="javascript:void(0)">Projects</a>
                   </li>
                   <li>
-                    <a href="/blog.html">Blogs</a>
+                    <a href="javascript:void(0)">Blogs</a>
                   </li>
                 </ul>
               </div>
@@ -566,14 +745,14 @@
                 <h5 class="ud-widget-title">Contact Us</h5>
                 <ul class="ud-widget-links">
                   <li>
-                   <a href="mailto:theaitsolutionsllp@gmail.com">theaitsolutionsllp@gmail.com</a>
+                   <a href="mailto:support@theaitsolutions.net">support@theaitsolutions.net</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">+91 9846875775</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">+91 9567567924</a>
-                  </li>
+                <a href="tel:+919048299118">+91 9048299118</a>
+              </li>
+              <li>
+                <a href="tel:+919048577118">+91 9048577118</a>
+              </li>
                 </ul>
               </div>
             </div>
@@ -582,34 +761,18 @@
       </div>
       <div class="ud-footer-bottom">
         <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <ul class="ud-footer-bottom-left">
-                <li>
-                  <a href="javascript:void(0)">Privacy policy</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Support policy</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Terms of service</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4">
+          <div>
               <p class="ud-footer-bottom-right">
-              Copyright © 2025 - All Rights Reserved 
-                <a style="color: grey;" href="#" rel="nofollow">Thea IT Solutions</a>
+              Copyright © 2025 <a style="color: grey;" href="https://theaitsolutions.net/" rel="nofollow">Thea IT Solutions</a> |  All Rights Reserved
               </p>
             </div>
-          </div>
         </div>
       </div>
     </footer>
     <!-- ====== Footer End ====== -->
 
     <!-- ====== Back To Top Start ====== -->
-    <a href="https://api.whatsapp.com/send?phone=919846875775" target="_blank" class="back-to-wa">
+    <a href="https://api.whatsapp.com/send?phone=919048299118" target="_blank" class="back-to-wa">
       <i class="lni lni-whatsapp"> </i>
     </a>
     <a href="javascript:void(0)" class="back-to-top">
@@ -623,6 +786,15 @@
     <script src="assets/js/main.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7587631210958149"
      crossorigin="anonymous"></script>
+     <!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".ud-menu-scroll");
@@ -677,10 +849,51 @@
     
         const text = `New Inquiry:\n\nName: ${fullName}\nEmail: ${email}\nPhone: +91 ${phone}\nMessage: ${message}`;
         const encodedText = encodeURIComponent(text);
-        const whatsappURL = `https://api.whatsapp.com/send?phone=919846875775&text=${encodedText}`;
+        const whatsappURL = `https://api.whatsapp.com/send?phone=919048299118&text=${encodedText}`;
     
         window.open(whatsappURL, "_blank");
       });
-    </script>
+
+      //sticky manage
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".ud-header");
+    const logo = document.getElementById("navbar-logo");
+
+    if (window.scrollY > 50) {
+      header.classList.add("sticky");
+      logo.src = "/assets/images/logo/logo_main.png"; // New logo when sticky
+    } else {
+      header.classList.remove("sticky");
+      logo.src = "/assets/images/logo/logo_white.png"; // Original logo
+    }
+  });
+
+  //carousal 
+  const swiper = new Swiper('.ud-hero-carousel', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+  //CAROUSAL MANAGE
+  document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth <= 768) {
+    const slides = document.querySelectorAll('.swiper-slide img');
+    slides.forEach(img => {
+      const mobileSrc = img.getAttribute('data-src-mobile');
+      if (mobileSrc) {
+        img.setAttribute('src', mobileSrc);
+        img.style.borderRadius = "17px"; // directly apply rounded style
+      }
+    });
+  }
+});
+
+</script>
   </body>
 </html>

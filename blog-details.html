@@ -9,7 +9,7 @@
     <!--====== Favicon Icon ======-->
     <link
       rel="shortcut icon"
-      href="assets/images/microsoft.svg"
+      href="/assets/images/favicon.svg"
       type="image/svg"
     />
 
@@ -26,8 +26,8 @@
         <div class="row">
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg">
-              <a class="navbar-brand" href="index.html">
-                <span class="fw-bold text-white startup-logo">Thea IT Solutions</span>
+               <a href="index.html">
+                <img src="/assets/images/logo/logo_white.png" alt="logo" class="logo" id="navbar-logo">
               </a>
               <button class="navbar-toggler">
                 <span class="toggler-icon"> </span>
@@ -417,7 +417,7 @@
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="ud-widget">
                 <a href="index.html" class="ud-footer-logo">
-                  <span class="fw-bold text-white startup-logo">Thea IT Solutions</span>
+                  <img src="/assets/images/logo/logo_white.png" alt="logo" style="margin-left: -20px;">
                 </a>
                 <p class="ud-widget-desc">
                   We create digital experiences for brands and companies by
@@ -425,22 +425,22 @@
                 </p>
                 <ul class="ud-widget-socials">
                   <li>
-                    <a href="https://twitter.com/Thea IT Solutions">
+                    <a href="https://www.facebook.com/theaitsolutions">
                       <i class="lni lni-facebook-filled"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/Thea IT Solutions">
+                    <a href="https://www.facebook.com/theaitsolutions">
                       <i class="lni lni-whatsapp"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/Thea IT Solutions">
+                    <a href="https://www.facebook.com/theaitsolutions">
                       <i class="lni lni-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/Thea IT Solutions">
+                    <a href="https://www.facebook.com/theaitsolutions">
                       <i class="lni lni-linkedin-original"></i>
                     </a>
                   </li>
@@ -462,7 +462,7 @@
                     <a href="javascript:void(0)">Projects</a>
                   </li>
                   <li>
-                    <a href="/blog.html">Blogs</a>
+                    <a href="javascript:void(0)">Blogs</a>
                   </li>
                 </ul>
               </div>
@@ -472,13 +472,13 @@
                 <h5 class="ud-widget-title">Contact Us</h5>
                 <ul class="ud-widget-links">
                   <li>
-                   <a href="mailto:theaitsolutionsllp@gmail.com">theaitsolutionsllp@gmail.com</a>
+                   <a href="mailto:support@theaitsolutions.net">support@theaitsolutions.net</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">+91 9846875775</a>
+                    <a href="tel:+919048299118">+91 9846875775</a>
                   </li>
                   <li>
-                    <a href="javascript:void(0)">+91 9567567924</a>
+                    <a href="tel:+919567567924">+91 9567567924</a>
                   </li>
                 </ul>
               </div>
@@ -488,27 +488,11 @@
       </div>
       <div class="ud-footer-bottom">
         <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <ul class="ud-footer-bottom-left">
-                <li>
-                  <a href="javascript:void(0)">Privacy policy</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Support policy</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Terms of service</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4">
+          <div>
               <p class="ud-footer-bottom-right">
-              Copyright © 2025 - All Rights Reserved 
-                <a style="color: grey;" href="#" rel="nofollow">Thea IT Solutions</a>
+              Copyright © 2025 <a style="color: grey;" href="https://theaitsolutions.net/" rel="nofollow">Thea IT Solutions</a> |  All Rights Reserved
               </p>
             </div>
-          </div>
         </div>
       </div>
     </footer>
@@ -526,5 +510,20 @@
     <script src="assets/js/main.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7587631210958149"
      crossorigin="anonymous"></script>
+      <script>
+           //sticky manage
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".ud-header");
+    const logo = document.getElementById("navbar-logo");
+
+    if (window.scrollY > 50) {
+      header.classList.add("sticky");
+      logo.src = "/assets/images/logo/logo_main.png"; // New logo when sticky
+    } else {
+      header.classList.remove("sticky");
+      logo.src = "/assets/images/logo/logo_white.png"; // Original logo
+    }
+  });
+     </script>
   </body>
 </html>
