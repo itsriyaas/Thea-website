@@ -930,18 +930,28 @@ text-align: center;
       });
 
       //sticky manage
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".ud-header");
-    const logo = document.getElementById("navbar-logo");
+ document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector(".ud-header");
+  const logo = document.getElementById("navbar-logo");
 
+  function handleScroll() {
     if (window.scrollY > 50) {
       header.classList.add("sticky");
-      logo.src = "/assets/images/logo/logo_main.png"; // New logo when sticky
+      logo.src = "/assets/images/logo/logo_main.png"; // New logo
     } else {
       header.classList.remove("sticky");
       logo.src = "/assets/images/logo/logo_white.png"; // Original logo
     }
-  });
+  }
+
+  // Initial check (in case user lands mid-scroll)
+  handleScroll();
+
+  // Listen for scroll and resize events
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("resize", handleScroll);
+});
+
 
   //carousal 
   const swiper = new Swiper('.ud-hero-carousel', {
