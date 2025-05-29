@@ -21,6 +21,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   </head>
+  <style>
+      .ud-page-banner {
+  position: relative;
+  overflow: hidden;
+  height:300px; /* or a fixed height like 500px */
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ud-banner-content h1 {
+  text-shadow: 2px 2px 10px rgba(0, 157, 255, 0.374);
+}
+  </style>
   <body>
     <!-- ====== Header Start ====== -->
     <header class="ud-header">
@@ -29,7 +55,7 @@
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg">
                <a href="index.html">
-                <img src="/assets/images/logo/logo_white.png" alt="logo" class="logo" id="navbar-logo">
+                <img src="/assets/images/logo/logo_main.png" alt="logo" class="logo" id="navbar-logo">
               </a>
               <button class="navbar-toggler">
                 <span class="toggler-icon"> </span>
@@ -38,22 +64,22 @@
               </button>
 
               <div class="navbar-collapse">
-                <ul id="nav" class="navbar-nav mx-auto">
+               <ul id="nav" class="navbar-nav mx-auto">
                   <li class="nav-item">
-                    <a class="ud-menu-scroll" href="/index.html">Home</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="ud-menu-scroll" href="/index.html#about">About</a>
+                    <a class="ud-menu-scroll" href="/index.html">HOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="ud-menu-scroll" href="/index.html#faq">Faq</a>
+                    <a class="ud-menu-scroll" href="index.html#about">ABOUT US</a>
+                  </li>
+                   <li class="nav-item">
+                    <a class="ud-menu-scroll" href="index.html#features">SERVICES</a>
                   </li>
                   <li class="nav-item">
-                    <a class="ud-menu-scroll" href="/index.html#features">Services</a>
+                    <a class="ud-menu-scroll" href="index.html#faq">FAQ</a>
                   </li>
+                  
                   <li class="nav-item">
-                    <a class="ud-menu-scroll" href="/contact.html">Contact</a>
+                    <a class="ud-menu-scroll" href="index.html#contact">CONTACT</a>
                   </li>
                 </ul>
               </div>
@@ -64,18 +90,27 @@
     </header>
     <!-- ====== Header End ====== -->
 
-    <!-- ====== Banner Start ====== -->
+   <!-- ====== Banner Start ====== -->
     <section class="ud-page-banner">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="ud-banner-content">
-                <h1>App Development</h1>
-              </div>
-            </div>
-          </div>
+  <div class="video-background">
+    <video autoplay loop muted playsinline>
+      <source src="/assets/images/12676831_2560_1440_30fps.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-12 d-flex align-items-center justify-content-center text-center">
+        <div class="ud-banner-content text-white">
+          <h1 class="display-4 fw-bold">App Development</h1>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       <!-- ====== Banner End ====== -->
  
       <!-- ====== App Development Section Start ====== -->
@@ -284,7 +319,7 @@
       logo.src = "/assets/images/logo/logo_main.png"; // New logo when sticky
     } else {
       header.classList.remove("sticky");
-      logo.src = "/assets/images/logo/logo_white.png"; // Original logo
+      logo.src = "/assets/images/logo/logo_main.png"; // Original logo
     }
   });
      </script>

@@ -281,7 +281,7 @@ p {
 .navbar-toggler .toggler-icon {
   width: 30px;
   height: 2px;
-  background-color: var(--white);
+  background-color: black;
   display: block;
   margin: 5px 0;
   position: relative;
@@ -351,7 +351,7 @@ p {
 .navbar-nav .nav-item > a {
   font-size: 16px;
   font-weight: 400;
-  color: var(--white);
+  color: black;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   padding: 25px 8px;
@@ -367,7 +367,7 @@ p {
 }
 
 .navbar-nav .nav-item > a:hover, .navbar-nav .nav-item > a.active {
-  color: var(--white);
+  color:grey;
   opacity: 0.5;
 }
 
@@ -421,7 +421,7 @@ p {
 }
 
 .navbar-nav .nav-item:hover > a {
-  color: var(--white);
+  color: grey;
   opacity: 0.5;
 }
 
@@ -484,12 +484,12 @@ p {
 }
 
 .navbar-btn .ud-white-btn {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--primary-color);
 }
 
 .navbar-btn .ud-white-btn:hover {
   background: white;
-  color: var(--heading-color);
+  color: rgb(0, 0, 0);
 }
 
 .sticky .navbar-toggler .toggler-icon {
@@ -583,7 +583,7 @@ p {
 }
 
 .ud-hero-content .ud-hero-title {
-  color: var(--white);
+  color: rgb(24, 24, 24);
   font-weight: 700;
   font-size: 45px;
   line-height: 60px;
@@ -610,7 +610,7 @@ p {
   font-size: 20px;
   line-height: 35px;
   text-align: center;
-  color: var(--white);
+  color: rgb(85, 85, 85);
   opacity: 0.8;
   max-width: 600px;
   margin: auto;
@@ -665,7 +665,7 @@ p {
 }
 
 .ud-hero-buttons .ud-link-btn:hover {
-  color: var(--white);
+  color: black;
   background: transparent;
   opacity: 0.5;
 }
@@ -1695,24 +1695,16 @@ p {
 }
 
 /* ====== Banner CSS ======= */
-.ud-page-banner {
-  padding-top: 130px;
-  padding-bottom: 80px;
-  background: var(--primary-color);
-  background-image: url("../images/banner/banner-bg.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 .ud-banner-content {
   text-align: center;
   max-width: 600px;
-  margin: auto;
+  margin-top: 130px;
 }
 
 .ud-banner-content h1 {
-  color: var(--white);
+  color: black;
   font-size: 38px;
   font-weight: 600;
 }
@@ -2736,8 +2728,8 @@ input[type=number] {
 
  .logo {
   padding-top: 10px;
-  width: 100px;
-  height: 50px;
+  width: 130px;
+  height: 60px;
 }
 @media (max-width: 767px) {
  .logo {
